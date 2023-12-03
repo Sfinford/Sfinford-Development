@@ -1,0 +1,67 @@
+body {
+    background-color: #121212; /* Dark Mode Background */
+    color: #ffffff; /* Text Color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #00ff00; /* Title Color */
+}
+
+.project {
+    background: linear-gradient(145deg, #333333, #000000); /* Gradient Background */
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth Scaling Effect */
+    display: flex; /* Align icon with project details */
+    align-items: center;
+    overflow: hidden; /* Keeps the child elements inside the project box */
+}
+
+.project:hover {
+    transform: scale(1.01); /* Scale Up on Hover */
+}
+
+.project-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.description {
+    font-size: 0.9em;
+}
+
+.continued {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.project-icon {
+    width: 64px; /* Adjust as needed */
+    height: 64px; /* Adjust as needed */
+    margin-right: 20px; /* Spacing between icon and text */
+    border-radius: 10px;
+}
+
+.project-details {
+    flex-grow: 1; /* Allows the details to fill the remaining space */
+}
+
+.project-link {
+    display: flex; /* Makes the link block-level to fill the .project container */
+    align-items: center;
+    text-decoration: none; /* Removes the underline from links */
+    color: inherit; /* Inherits the text color from the parent */
+    border-radius: 10px;
+    height: 100%; /* Ensures the link fills the entire container height */
+}
