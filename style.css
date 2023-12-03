@@ -7,8 +7,11 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
+    display: flex; /* Makes it a flex container */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    justify-content: space-around; /* Even spacing and centering of items */
 }
 
 h1 {
@@ -17,14 +20,16 @@ h1 {
 }
 
 .project {
-    background: linear-gradient(145deg, #333333, #000000); /* Gradient Background */
+    background: linear-gradient(145deg, #333333, #000000);
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Smooth Scaling Effect */
-    display: flex; /* Align icon with project details */
+    transition: transform 0.3s ease;
+    display: flex;
     align-items: center;
-    overflow: hidden; /* Keeps the child elements inside the project box */
+    overflow: hidden;
+    flex-basis: 45%; /* Adjust width for two columns */
+    margin: 10px; /* Optional: adjust for spacing */
 }
 
 .project:hover {
